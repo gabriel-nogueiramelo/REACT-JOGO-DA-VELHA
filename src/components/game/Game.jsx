@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import styles from './Game.module.css'
 
-import Icon from '../icons/Icon'
+import Icon from '../icon/Icon'
 import GameOption from '../gameOption/GameOption'
 
 function Game () {
@@ -9,14 +9,13 @@ function Game () {
   const [currentPlayer, setCurrentPlayer] = useState(1) 
 
   const handleClick = (pos) => {
-
     if (gameState[pos] === 0) {
-    let newGameState = [...gameState] 
-    newGameState[pos] = currentPlayer
-    setCurrentPlayer(currentPlayer * -1)
-    setGameState(newGameState)
-    }
-  }
+     let newGameState = [...gameState] 
+     newGameState[pos] = currentPlayer
+     setCurrentPlayer(currentPlayer * -1)
+     setGameState(newGameState)
+   }
+ }
 
   return (
     <div className={styles.gameContent}>
