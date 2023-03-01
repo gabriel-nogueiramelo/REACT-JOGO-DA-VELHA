@@ -1,4 +1,4 @@
-import styles from './GameInfo.module.css'
+import styles from './Gameinfo.module.css'
 
 import Icon from '../icon/Icon'
 import Button from '../button/Button'
