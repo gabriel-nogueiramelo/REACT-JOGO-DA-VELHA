@@ -3,7 +3,7 @@ import styles from './Gameinfo.module.css'
 import Icon from '../icon/Icon'
 import Button from '../button/Button'
 
-function GameInfo ({ currentPlayer, winner, onReset, isDraw  }) {
+function GameInfo ({ currentPlayer, winner, onReset, isDraw }) {
 
  const shouldDisableButton = () => winner !== 0 || isDraw
 
